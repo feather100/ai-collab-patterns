@@ -13,12 +13,14 @@ ai-collab-protocol/
 ├── AI_ENTRY.md          ← AI 入口文件（告诉新 AI 怎么读项目）
 ├── DECISIONS.md         ← 设计决策记录（记录每个决策的"为什么"）
 ├── COLLAB.md            ← 协作规范（SoT、变更流程、验收标准、成本确认）
+├── SESSION_HANDOFF.md   ← 会话交接（跨机器/跨 AI 接力时记录当前状态）
 ├── ROLLOUT_PLAN.md      ← 四步推广方案
-└── examples/
-    └── iaibench/        ← IAIBench 真实案例参考
-        ├── AGENTS.md
-        ├── 00-协作规范.md
-        └── 01-设计决策记录.md（节选）
+├── FEISHU_SHARE.md      ← 飞书分享卡片
+├── .gitignore
+├── examples/
+│   └── iaibench/        ← IAIBench 真实案例参考
+└── skill/
+    └── install-ai-collab-rules.md  ← Reasonix 技能包
 ```
 
 ## 🚀 快速开始
@@ -44,24 +46,27 @@ cp -r ai-collab-protocol/* your-project/
 
 ## 🧠 核心理念
 
-### 三个文件解决三个问题
+### 四个文件解决四个问题
 
 | 文件 | 解决什么问题 | 类比 |
 |---|---|---|
 | `AI_ENTRY.md` | 新 AI 接入后不知从哪读起 | AI 版的 README |
 | `DECISIONS.md` | 后来者不理解"为什么现在是这样的" | CHANGELOG 的决策版 |
 | `COLLAB.md` | 多 AI 各自为政、标准不一致 | AI 版的 eslint 规则集 |
+| `SESSION_HANDOFF.md` | 换机器/换人后对话上下文断了 | AI 对话的 git commit |
 
-### 三条不可违反的铁律
+### 四条不可违反的铁律
 
 1. **📝 文档留痕** — 任何设计决策都要记录理由
 2. **💰 成本确认** — 任何付费/外部 API 动作必须先停下说明开销
 3. **🎯 SoT 一致** — 改标准必同步决策记录和下游实现
+4. **🔄 会话交接** — 收工前写 SESSION_HANDOFF.md 并提交到 Git
 
 ## 📖 使用场景
 
 - **新项目启动** — 初始化时直接复制模板，建立 AI 协作基线
 - **老项目改造** — 补上 AI_ENTRY.md 和 DECISIONS.md，对齐上下文
+- **多机器开发** — 配合 SESSION_HANDOFF.md 实现跨机器 AI 对话无缝接力
 - **团队标准化** — 统一所有项目的 AI 协作规范，减少沟通成本
 
 ## 🤝 贡献

@@ -1,11 +1,11 @@
 ---
 name: install-ai-collab-rules
-description: 一键安装 AI 协作规范（AI_ENTRY.md + DECISIONS.md + COLLAB.md）到当前项目，适用于多 AI 协同的项目
+description: 一键安装 AI 协作规范（AI_ENTRY.md + DECISIONS.md + COLLAB.md + SESSION_HANDOFF.md），适用于多 AI 协同的项目
 ---
 
 # Install AI Collaboration Rules
 
-Install the three-file AI collaboration protocol (AI_ENTRY.md + DECISIONS.md + COLLAB.md) into the current project.
+Install the four-file AI collaboration protocol (AI_ENTRY.md + DECISIONS.md + COLLAB.md + SESSION_HANDOFF.md) into the current project.
 
 ## Usage
 
@@ -20,7 +20,8 @@ Install the three-file AI collaboration protocol (AI_ENTRY.md + DECISIONS.md + C
 3. Write `AI_ENTRY.md` to project root
 4. Write `DECISIONS.md` to project root  
 5. Write `COLLAB.md` to project root
-6. Verify files are created
+6. Write `SESSION_HANDOFF.md` to project root
+7. Verify files are created
 
 ## Rules  
 
