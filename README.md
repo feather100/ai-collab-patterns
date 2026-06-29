@@ -18,7 +18,7 @@ ai-collab-protocol/
 ├── FEISHU_SHARE.md      ← 飞书分享卡片
 ├── .gitignore
 ├── examples/
-│   └── iaibench/        ← IAIBench 真实案例参考
+│   └── sanitized/        ← 脱敏的格式示例（占位内容，不涉及真实项目）
 └── skill/
     └── install-ai-collab-rules.md  ← Reasonix 技能包
 ```
